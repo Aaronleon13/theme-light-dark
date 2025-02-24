@@ -1,0 +1,39 @@
+:root{
+    --bg-primary: #f4f4f4;
+    --text-primary: #201f1f;
+    --bg-button: #333;
+    --text-btn: #f4f4f4;
+}
+
+body{
+    margin : 0;
+    background-color: var(--bg-primary);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+main h1{
+    color: var(--text-primary);
+}
+
+main p{
+    color: var(--text-primary);
+}
+
+button{
+    background-color: var(--bg-button);
+    color: var(--text-btn);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
