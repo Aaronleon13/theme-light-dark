@@ -20,11 +20,11 @@ main{
     height: 100dvh;
 }
 
-main h1{
+h1{
     color: var(--text-primary);
 }
 
-main p{
+p{
     color: var(--text-primary);
 }
 
@@ -34,6 +34,5 @@ button{
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
