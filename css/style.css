@@ -4,12 +4,19 @@
     --bg-button: #333;
     --text-btn: #f4f4f4;
 }
+.dark-theme{
+    --bg-primary: #201f1f;
+    --text-primary: #f4f4f4;
+    --bg-button: #f4f4f4;
+    --text-btn: #201f1f;    
+}
 
 body{
     margin : 0;
     background-color: var(--bg-primary);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    transition: background-color linear 1s;
 }
 
 main{
@@ -22,10 +29,12 @@ main{
 
 h1{
     color: var(--text-primary);
+    transition: color linear .5s;
 }
 
 p{
     color: var(--text-primary);
+    transition: color linear .5s;
 }
 
 button{
@@ -36,10 +45,10 @@ button{
     cursor: pointer;
     border-radius: 5px;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-    transition: all 0.3s;
+    transition: linear border-radius .3s, box-shadow .5s, background-color .5s, color .5s;
 }
 
 button:hover{
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-    transform: translateY(-5px);
+    border-radius: 0px;
 }
