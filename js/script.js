@@ -1,13 +1,17 @@
 const body = document.querySelector('body');
 const button = document.querySelector('button');
 
-
 button.addEventListener('click',() => {
 body.classList.toggle('dark-theme');
-addText();
+swapIconTheme();
 })
 
-
-const addText = ()  => {
-    button.innerText = 'Light Mode';
+const swapIconTheme = () => {
+    if (body.classList.contains('dark-theme')) {
+        button.innerText = '🌞';
+    }else {
+        button.innerText = '🌕';
+    }
 }
+
+swapIconTheme();
