@@ -8,6 +8,7 @@
     <meta name="author" content="Aaron Leon">
     <link rel="stylesheet" href="css/style.css">
     <title>Ing. en Software | Diseño interactivo de software</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <header>
@@ -21,8 +22,15 @@
         <h1 class="titulo">Curso de diseño interactivo 💻 </h1>
     </header>
     <p class="texto">Para cambiar el tema de color da click aqui abajo</p>
+    <div id="app">
+        <h1>{{ message }}</h1>
+        <button @click="sum()">+</button>
+        <p>{{ counter }}</p>
+        <button @click="rest()">-</button>
+    </div>
 </section>
 </main>
-    <script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
