@@ -7,11 +7,11 @@ createApp({
     const isValid = ref(false)
 
     const sum = () => {
-        counter.value++
+        counter.value =+ Math.floor(Math.random() * 100) 
     }
 
     const rest = () => {
-        counter.value--
+        counter.value =- Math.floor(Math.random() * 100)
     }
 
     return {

@@ -23,10 +23,15 @@
     </header>
     <p class="texto">Para cambiar el tema de color da click aqui abajo</p>
     <div id="app">
-        <h1>{{ message }}</h1>
-        <button @click="sum()">+</button>
-        <p>{{ counter }}</p>
-        <button @click="rest()">-</button>
+        <div v-if="counter !== 21">       
+            <h1>{{ message }}</h1>
+            <button @click="sum()">+</button>
+            <p>{{ counter }}</p>
+            <button @click="rest()">-</button>
+        </div>
+        <div v-else>
+            <h1>HAZ GANADO</h1>
+        </div>
     </div>
 </section>
 </main>
